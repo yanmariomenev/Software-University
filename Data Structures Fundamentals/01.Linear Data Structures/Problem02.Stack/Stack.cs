@@ -8,34 +8,84 @@
     {
         private Node<T> _top;
 
+        public Stack()
+        {
+            this._top = null;
+            this.Count = 0;
+        }
+
+        public Stack(Node<T> top)
+        {
+            this._top = top;
+            this.Count = 1;
+        }
+
         public int Count { get; private set; }
 
         public bool Contains(T item)
         {
-            throw new NotImplementedException();
+            Node<T> current = this._top;
+
+            while (current != null)
+            {
+                if (current.Value.Equals(item))
+                {
+                    return true;
+                }
+                current = current.Next;
+            }
+
+            return false;
         }
 
         public T Peek()
         {
-            throw new NotImplementedException();
+            this.ValidateIfEmpty();
+
+            return this._top.Value;
         }
 
         public T Pop()
         {
-            throw new NotImplementedException();
+            this.ValidateIfEmpty();
+
+            Node<T> toReturn = this._top;
+            this._top = this._top.Next;
+            this.Count--;
+
+            return toReturn.Value;
         }
+
 
         public void Push(T item)
         {
-            throw new NotImplementedException();
+            Node<T> toInsert = new Node<T>(item);
+            toInsert.Next = this._top;
+            this._top = toInsert;
+
+            this.Count++;
         }
 
         public IEnumerator<T> GetEnumerator()
         {
-            throw new NotImplementedException();
+            Node<T> current = _top;
+
+            while (current != null)
+            {
+                yield return current.Value;
+                current = current.Next;
+            }
         }
 
-        IEnumerator IEnumerable.GetEnumerator() 
-            => throw new NotImplementedException();
+        IEnumerator IEnumerable.GetEnumerator()
+            => this.GetEnumerator();
+
+        private void ValidateIfEmpty()
+        {
+            if (this.Count == 0)
+            {
+                throw new InvalidOperationException("Stack is empty");
+            }
+        }
     }
 }

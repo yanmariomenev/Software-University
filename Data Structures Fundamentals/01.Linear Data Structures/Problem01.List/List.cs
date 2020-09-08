@@ -54,7 +54,7 @@
 
         public int IndexOf(T item)
         {
-            for (int i = 0; i < this._items.Length; i++)
+            for (int i = 0; i < this.Count; i++)
             {
                 if (this._items[i].Equals(item))
                 {
