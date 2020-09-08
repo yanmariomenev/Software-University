@@ -1,0 +1,9 @@
+E:\Github Repos\Software-University\Data Structures Fundamentals\01.Linear Data Structures\Problem03.Queue\bin\Debug\netcoreapp3.1\Problem03.Queue.deps.json
+E:\Github Repos\Software-University\Data Structures Fundamentals\01.Linear Data Structures\Problem03.Queue\bin\Debug\netcoreapp3.1\Problem03.Queue.dll
+E:\Github Repos\Software-University\Data Structures Fundamentals\01.Linear Data Structures\Problem03.Queue\bin\Debug\netcoreapp3.1\Problem03.Queue.pdb
+E:\Github Repos\Software-University\Data Structures Fundamentals\01.Linear Data Structures\Problem03.Queue\obj\Debug\netcoreapp3.1\Problem03.Queue.csprojAssemblyReference.cache
+E:\Github Repos\Software-University\Data Structures Fundamentals\01.Linear Data Structures\Problem03.Queue\obj\Debug\netcoreapp3.1\Problem03.Queue.AssemblyInfoInputs.cache
+E:\Github Repos\Software-University\Data Structures Fundamentals\01.Linear Data Structures\Problem03.Queue\obj\Debug\netcoreapp3.1\Problem03.Queue.AssemblyInfo.cs
+E:\Github Repos\Software-University\Data Structures Fundamentals\01.Linear Data Structures\Problem03.Queue\obj\Debug\netcoreapp3.1\Problem03.Queue.csproj.CoreCompileInputs.cache
+E:\Github Repos\Software-University\Data Structures Fundamentals\01.Linear Data Structures\Problem03.Queue\obj\Debug\netcoreapp3.1\Problem03.Queue.dll
+E:\Github Repos\Software-University\Data Structures Fundamentals\01.Linear Data Structures\Problem03.Queue\obj\Debug\netcoreapp3.1\Problem03.Queue.pdb

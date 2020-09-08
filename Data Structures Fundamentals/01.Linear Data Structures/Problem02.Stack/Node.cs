@@ -10,7 +10,5 @@
             this.Value = value;
             this.Next = next;
         }
-
-
     }
 }
