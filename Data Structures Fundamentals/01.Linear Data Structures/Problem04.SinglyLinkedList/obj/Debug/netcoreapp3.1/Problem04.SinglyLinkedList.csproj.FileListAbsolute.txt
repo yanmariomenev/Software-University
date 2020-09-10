@@ -1,0 +1,9 @@
+E:\Github Repos\Software-University\Data Structures Fundamentals\01.Linear Data Structures\Problem04.SinglyLinkedList\bin\Debug\netcoreapp3.1\Problem04.SinglyLinkedList.deps.json
+E:\Github Repos\Software-University\Data Structures Fundamentals\01.Linear Data Structures\Problem04.SinglyLinkedList\bin\Debug\netcoreapp3.1\Problem04.SinglyLinkedList.dll
+E:\Github Repos\Software-University\Data Structures Fundamentals\01.Linear Data Structures\Problem04.SinglyLinkedList\bin\Debug\netcoreapp3.1\Problem04.SinglyLinkedList.pdb
+E:\Github Repos\Software-University\Data Structures Fundamentals\01.Linear Data Structures\Problem04.SinglyLinkedList\obj\Debug\netcoreapp3.1\Problem04.SinglyLinkedList.csprojAssemblyReference.cache
+E:\Github Repos\Software-University\Data Structures Fundamentals\01.Linear Data Structures\Problem04.SinglyLinkedList\obj\Debug\netcoreapp3.1\Problem04.SinglyLinkedList.AssemblyInfoInputs.cache
+E:\Github Repos\Software-University\Data Structures Fundamentals\01.Linear Data Structures\Problem04.SinglyLinkedList\obj\Debug\netcoreapp3.1\Problem04.SinglyLinkedList.AssemblyInfo.cs
+E:\Github Repos\Software-University\Data Structures Fundamentals\01.Linear Data Structures\Problem04.SinglyLinkedList\obj\Debug\netcoreapp3.1\Problem04.SinglyLinkedList.csproj.CoreCompileInputs.cache
+E:\Github Repos\Software-University\Data Structures Fundamentals\01.Linear Data Structures\Problem04.SinglyLinkedList\obj\Debug\netcoreapp3.1\Problem04.SinglyLinkedList.dll
+E:\Github Repos\Software-University\Data Structures Fundamentals\01.Linear Data Structures\Problem04.SinglyLinkedList\obj\Debug\netcoreapp3.1\Problem04.SinglyLinkedList.pdb
