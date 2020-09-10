@@ -1,9 +1,0 @@
-E:\Github Repos\Software-University\Data Structures Fundamentals\01.Linear Data Structures\Problem01.List\bin\Debug\netcoreapp3.1\Problem01.List.deps.json
-E:\Github Repos\Software-University\Data Structures Fundamentals\01.Linear Data Structures\Problem01.List\bin\Debug\netcoreapp3.1\Problem01.List.dll
-E:\Github Repos\Software-University\Data Structures Fundamentals\01.Linear Data Structures\Problem01.List\bin\Debug\netcoreapp3.1\Problem01.List.pdb
-E:\Github Repos\Software-University\Data Structures Fundamentals\01.Linear Data Structures\Problem01.List\obj\Debug\netcoreapp3.1\Problem01.List.csprojAssemblyReference.cache
-E:\Github Repos\Software-University\Data Structures Fundamentals\01.Linear Data Structures\Problem01.List\obj\Debug\netcoreapp3.1\Problem01.List.AssemblyInfoInputs.cache
-E:\Github Repos\Software-University\Data Structures Fundamentals\01.Linear Data Structures\Problem01.List\obj\Debug\netcoreapp3.1\Problem01.List.AssemblyInfo.cs
-E:\Github Repos\Software-University\Data Structures Fundamentals\01.Linear Data Structures\Problem01.List\obj\Debug\netcoreapp3.1\Problem01.List.csproj.CoreCompileInputs.cache
-E:\Github Repos\Software-University\Data Structures Fundamentals\01.Linear Data Structures\Problem01.List\obj\Debug\netcoreapp3.1\Problem01.List.dll
-E:\Github Repos\Software-University\Data Structures Fundamentals\01.Linear Data Structures\Problem01.List\obj\Debug\netcoreapp3.1\Problem01.List.pdb

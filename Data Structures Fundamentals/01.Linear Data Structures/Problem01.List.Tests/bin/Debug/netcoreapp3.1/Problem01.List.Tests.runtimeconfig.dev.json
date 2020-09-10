@@ -1,8 +1,0 @@
-{
-  "runtimeOptions": {
-    "additionalProbingPaths": [
-      "C:\\Users\\Yanmario\\.dotnet\\store\\|arch|\\|tfm|",
-      "C:\\Users\\Yanmario\\.nuget\\packages"
-    ]
-  }
-}
