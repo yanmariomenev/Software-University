@@ -87,7 +87,6 @@
             }
 
             this.RemoveAt(indexOfElement);
-            this.Count--;
 
             return true;
         }

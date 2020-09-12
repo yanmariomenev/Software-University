@@ -216,7 +216,7 @@ namespace Problem03.ReversedList.Tests
                 Assert.Throws<IndexOutOfRangeException>(() => { list.RemoveAt(count + i); });
             }
         }
-        // test doesn't work correctly
+
         [Test]
         public void RemoveShouldWorkCorrectly()
         {
