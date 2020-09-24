@@ -10,6 +10,7 @@ import { MovieService } from '../services/movie.service';
 export class MoviesComponent implements OnInit {
   popularMovies : Array<IMovie>;
   inTheatherMovies : Array<IMovie>;
+  messageOnClick = null;
   constructor(private moviesService: MovieService) { }
 
   ngOnInit() {
@@ -20,7 +21,9 @@ export class MoviesComponent implements OnInit {
   this.moviesService.getInTheatherMovies().subscribe(data => {
     this.inTheatherMovies = data['results'].slice(0, 6);
   });
-
+  }
+  fromChild(event){
+  this.messageOnClick = event;
   }
 
 }

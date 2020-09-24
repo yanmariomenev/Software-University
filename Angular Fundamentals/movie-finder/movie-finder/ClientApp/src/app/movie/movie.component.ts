@@ -1,4 +1,5 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input, OnInit, Output } from '@angular/core';
+import { EventEmitter } from '@angular/core';
 import IMovie from '../models/IMovie';
 
 @Component({
@@ -10,10 +11,17 @@ export class MovieComponent implements OnInit {
   @Input('movie')
   movie: IMovie;
   imagePath: string;
+  @Output()
+  clickButtonEmitter : EventEmitter<any> = new EventEmitter();
+
   constructor() { }
 
   ngOnInit() {
     this.imagePath = 'https://image.tmdb.org/t/p/w500' + this.movie.poster_path;
+  }
+
+  clickButton(){
+    this.clickButtonEmitter.emit(this.movie.id.toString())
   }
 
 }
