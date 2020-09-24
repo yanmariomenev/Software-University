@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { RouterModule } from '@angular/router';
+import {AppRoutingModule} from './app-routing.module'
 
 import { AppComponent } from './app.component';
 import { NavMenuComponent } from './nav-menu/nav-menu.component';
@@ -16,6 +17,7 @@ import { MoviesComponent } from './movies/movies.component';
 import { MovieService } from './services/movie.service';
 import { MovieComponent } from './movie/movie.component';
 import { FooterComponent } from './footer/footer.component';
+import { MovieDetailsComponent } from './movie-details/movie-details.component';
 
 @NgModule({
   declarations: [
@@ -27,11 +29,13 @@ import { FooterComponent } from './footer/footer.component';
     MoviesComponent,
     MovieComponent,
     FooterComponent,
+    MovieDetailsComponent,
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
     HttpClientModule,
     FormsModule,
+    AppRoutingModule,
     ApiAuthorizationModule,
     RouterModule.forRoot([
       { path: '', component: HomeComponent, pathMatch: 'full' },
