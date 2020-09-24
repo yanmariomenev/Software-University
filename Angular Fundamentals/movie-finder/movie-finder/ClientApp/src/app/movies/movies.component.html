@@ -12,6 +12,20 @@
     </div>
 </div>
 
+<h1>Popular Kids Movies</h1>
+<div class="row">
+    <div class="col-lg-2" *ngFor= "let movie of popularKidsMovies">
+        <app-movie [movie] = "movie" (clickButtonEmitter)="fromChild($event)"></app-movie>
+    </div>
+</div>
+
+<h1>Popular Drama Movies 2020</h1>
+<div class="row">
+    <div class="col-lg-2" *ngFor= "let movie of popularDramaMovies">
+        <app-movie [movie] = "movie" (clickButtonEmitter)="fromChild($event)"></app-movie>
+    </div>
+</div>
+
 <div class="row" *ngIf="messageOnClick">
     <div class="col-lg-4"></div>
     <div class="col-lg-4">

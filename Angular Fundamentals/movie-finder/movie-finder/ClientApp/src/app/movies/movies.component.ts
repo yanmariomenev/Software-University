@@ -10,16 +10,26 @@ import { MovieService } from '../services/movie.service';
 export class MoviesComponent implements OnInit {
   popularMovies : Array<IMovie>;
   inTheatherMovies : Array<IMovie>;
+  popularKidsMovies : Array<IMovie>;
+  popularDramaMovies : Array<IMovie>;
   messageOnClick = null;
   constructor(private moviesService: MovieService) { }
 
   ngOnInit() {
   this.moviesService.getPopularMovies().subscribe(data => {
-    this.popularMovies = data['results'].slice(0, 6);
+    this.popularMovies = data;
   });
 
   this.moviesService.getInTheatherMovies().subscribe(data => {
-    this.inTheatherMovies = data['results'].slice(0, 6);
+    this.inTheatherMovies = data;
+  });
+
+  this.moviesService.getPopularKidsMovies().subscribe(data => {
+    this.popularKidsMovies = data;
+  });
+
+  this.moviesService.getBestDramaMovies().subscribe(data => {
+    this.popularDramaMovies = data;
   });
   }
   fromChild(event){
