@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute, Params } from '@angular/router';
+import IMovieDetails from '../models/IMovieDetails';
+import { MovieService } from '../services/movie.service';
 
 @Component({
   selector: 'app-movie-details',
@@ -7,9 +10,32 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MovieDetailsComponent implements OnInit {
 
-  constructor() { }
+  id: string;
+  movieDetails: IMovieDetails;
+  movieGenres: string;
+  constructor(
+    private moviesService: MovieService,
+    private route: ActivatedRoute) 
+    { 
+
+    }
 
   ngOnInit() {
+   const id = this.route.snapshot.params['id'];
+   
+   this.route.params.subscribe((params: Params) => {
+     this.id = params['id']
+   });
+   
+   this.moviesService
+   .getMovieById(this.id)
+   .subscribe((data) => {
+     this.movieDetails = data;
+     this.movieGenres = this.movieDetails.genres
+     .map(el => el['name'])
+     .join(', ');
+   });
+
   }
 
 }

@@ -12,7 +12,6 @@ export class MoviesComponent implements OnInit {
   inTheatherMovies : Array<IMovie>;
   popularKidsMovies : Array<IMovie>;
   popularDramaMovies : Array<IMovie>;
-  messageOnClick = null;
   constructor(private moviesService: MovieService) { }
 
   ngOnInit() {
@@ -32,8 +31,4 @@ export class MoviesComponent implements OnInit {
     this.popularDramaMovies = data;
   });
   }
-  fromChild(event){
-  this.messageOnClick = event;
-  }
-
 }

@@ -5,7 +5,7 @@ import { MovieDetailsComponent } from "./movie-details/movie-details.component";
 import { MoviesComponent } from "./movies/movies.component";
 
 const appRoutes : Route[] = [
-    {path: '', component: HomeComponent, pathMatch: 'full'},
+    {path: '', pathMatch: 'full', redirectTo: 'movies'},
     {path: 'movies', component: MoviesComponent},
     {path: 'movie/:id', component: MovieDetailsComponent}
 ];
