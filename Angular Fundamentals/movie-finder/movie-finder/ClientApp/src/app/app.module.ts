@@ -18,6 +18,7 @@ import { MovieService } from './services/movie.service';
 import { MovieComponent } from './movie/movie.component';
 import { FooterComponent } from './footer/footer.component';
 import { MovieDetailsComponent } from './movie-details/movie-details.component';
+import { SingleMovieResolver } from './services/resolvers/single-movie.resolver';
 
 @NgModule({
   declarations: [
@@ -45,7 +46,8 @@ import { MovieDetailsComponent } from './movie-details/movie-details.component';
   ],
   providers: [
     { provide: HTTP_INTERCEPTORS, useClass: AuthorizeInterceptor, multi: true },
-    MovieService
+    MovieService,
+    SingleMovieResolver
   ],
   bootstrap: [AppComponent]
 })
