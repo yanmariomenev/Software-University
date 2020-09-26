@@ -2,10 +2,10 @@
 	<div class="container">
 	  <h1>Find a movie</h1>
 	  <p>Search for a movie using the form below:</p>
-	  <form>
-		<input class="form-control input-lg" type="text" placeholder="Search" aria-label="Search">
-		<button class="btn btn-primary mt-2" type="submit">Search</button>
-	  </form>
+	  <form #form="ngForm" (ngSubmit)="search()">
+        <input required type="text" class="form-control" name="query" ngModel>
+        <button [disabled]="form.invalid" type="sumbit" class="btn btn-primary">Search</button>
+      </form>  
 	</div>
  </div>
 

@@ -13,12 +13,10 @@ import { FetchDataComponent } from './fetch-data/fetch-data.component';
 import { ApiAuthorizationModule } from 'src/api-authorization/api-authorization.module';
 import { AuthorizeGuard } from 'src/api-authorization/authorize.guard';
 import { AuthorizeInterceptor } from 'src/api-authorization/authorize.interceptor';
-import { MoviesComponent } from './movies/movies.component';
 import { MovieService } from './services/movie.service';
-import { MovieComponent } from './movie/movie.component';
 import { FooterComponent } from './footer/footer.component';
-import { MovieDetailsComponent } from './movie-details/movie-details.component';
 import { SingleMovieResolver } from './services/resolvers/single-movie.resolver';
+import { AppMoviesModule } from './components/movies-module';
 
 @NgModule({
   declarations: [
@@ -27,16 +25,14 @@ import { SingleMovieResolver } from './services/resolvers/single-movie.resolver'
     HomeComponent,
     CounterComponent,
     FetchDataComponent,
-    MoviesComponent,
-    MovieComponent,
     FooterComponent,
-    MovieDetailsComponent,
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
     HttpClientModule,
     FormsModule,
     AppRoutingModule,
+    AppMoviesModule,
     ApiAuthorizationModule,
     RouterModule.forRoot([
       { path: '', component: HomeComponent, pathMatch: 'full' },

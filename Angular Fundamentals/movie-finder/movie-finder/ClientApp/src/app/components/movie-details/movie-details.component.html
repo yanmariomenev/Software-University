@@ -1,4 +1,3 @@
-<ng-template [ngIf] ="movieDetails">
     <div class="container w-50 mt-5">
         <h3 class="panel-title">{{movieDetails.title}}</h3>
           <img class="thumbnail" src="http://image.tmdb.org/t/p/w500/{{movieDetails.poster_path}}">
@@ -11,4 +10,3 @@
           <a *ngIf="movieDetails.homepage" href="{{movieDetails.homepage}}" target="_blank" class="btn btn-default">Visit Movie
             Website</a>
       </div>
-</ng-template>

@@ -1,14 +1,15 @@
 import {NgModule} from "@angular/core";
 import {RouterModule, Route} from '@angular/router';
-import { HomeComponent } from "./home/home.component";
-import { MovieDetailsComponent } from "./movie-details/movie-details.component";
-import { MoviesComponent } from "./movies/movies.component";
+import { MovieDetailsComponent } from "./components/movie-details/movie-details.component";
+import { MovieSearchComponent } from "./components/movie-search/movie-search.component";
+import { MoviesComponent } from "./components/movies/movies.component";
 import { SingleMovieResolver } from "./services/resolvers/single-movie.resolver";
 
 const appRoutes : Route[] = [
     {path: '', pathMatch: 'full', redirectTo: 'movies'},
     {path: 'movies', component: MoviesComponent},
-    {path: 'movie/:id', component: MovieDetailsComponent, resolve: {singleMovie: SingleMovieResolver}}
+    {path: 'movie/:id', component: MovieDetailsComponent, resolve: {singleMovie: SingleMovieResolver}},
+    {path: 'movies/search', component: MovieSearchComponent},
 ];
 
 @NgModule({
