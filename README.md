@@ -1,4 +1,9 @@
 # Software-University
-SoftUni Courses
-Other courses will bem oved here.
-Data Structures Fundamentals
+[![N|Solid](https://softuni.bg/Content/images/open-graph/university-default-og.png)](https://softuni.bg/)
+
+# Softuni Courses :
+
+  - Data Structures Fundamentals
+  - Angular Fundamentals
+
+# Homework and workshops will be uploaded here. 
