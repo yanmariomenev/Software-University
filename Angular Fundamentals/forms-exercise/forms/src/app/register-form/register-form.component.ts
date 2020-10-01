@@ -6,10 +6,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./register-form.component.css']
 })
 export class RegisterFormComponent implements OnInit {
-
+  phoneNumbers: Array<string> = ['+359', '+769', '+123'];
   constructor() { }
 
   ngOnInit(): void {
   }
 
+  register(formData){
+
+  }
 }
