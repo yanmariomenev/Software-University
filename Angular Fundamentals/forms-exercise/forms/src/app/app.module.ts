@@ -5,11 +5,13 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { RegisterFormComponent } from './register-form/register-form.component';
 import { FormsModule } from '@angular/forms';
+import { ImageUrlValidatorDirective } from './image-url-validator.directive';
 
 @NgModule({
   declarations: [
     AppComponent,
-    RegisterFormComponent
+    RegisterFormComponent,
+    ImageUrlValidatorDirective
   ],
   imports: [
     BrowserModule,

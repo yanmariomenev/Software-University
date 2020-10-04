@@ -84,6 +84,16 @@
                 Password do not match!
              </div>
          </div>
+         <div class="form-group input-group">
+          <div class="input-group-prepend">
+            <span class="input-group-text"> <i class="fa fa-image"></i> </span>
+          </div>
+          <input name="imageUrl" appImageUrlValidator class="form-control" placeholder="Image Url" type="url" required ngModel>
+        </div>
+        <div class="alert alert-danger" *ngIf="form.errors?.image">
+          Invalid image url!
+          <p> Supported formats: png & jpg</p>
+        </div>
           <div class="form-group">
             <button type="submit" class="btn btn-primary btn-block" [disabled]="form.invalid"> Create Account </button>
           </div>
